@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruits shop</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.mscwlns.co/mosaic-wellness/image/upload/f_auto,w_1000,c_limit/v1643033370/BW%20BLOG/Untitled-design-2022-01-24T193825.271--1-.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(2, 80, 2);
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: greenyellow;
+            text-decoration: none;
+            padding: 8px 15px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #333;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            min-width: 150px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu-toggle div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+        }
+        @media (max-width: 768px) {
+            .navbar-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 50px;
+                left: 0;
+            }
+            .navbar-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: flex;
+            }
+        }
+        .content {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        #fruits {
+            background-color: rgba(72, 67, 67, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #orange {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbH7Uvw1O7ixFL66NfZ8g9B9YC-R7esc6Cvg&s');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #apple {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdppfiuJ92VAc4U-QsOI6gTF4sRIiYqM9FEQ&s'); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #grapes {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkZYWuhtleWLVs_yA8L45a73FNw5f_f0rZTg&s');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; 
+        }
+        .content h2 {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#vegetable">Home</a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-btn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#orange"> orange</a>
+                <a href="#apple"> apple</a>
+                <a href="#grapes"> grapes</a>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="content" id="vegetable">
+        <h2>Welcome to Our Fresh fruits Shop</h2>
+        <p>We are your go-to destination for the freshest and most organic fruits. Our e-commerce platform brings farm-to-table produce right to your doorstep. With a wide variety of seasonal and exotic fruits, we ensure quality and freshness in every bite. Here’s why you should choose us:</p>
+        <ul>
+            <li>Fresh produce sourced daily from trusted farms.</li>
+            <li>Convenient online ordering and delivery services.</li>
+            <li>Affordable prices with no compromise on quality.</li>
+            <li>Eco-friendly packaging to reduce environmental impact.</li>
+        </ul>
+        <p>Browse our catalog to explore a world of healthy and delicious fruits. Your health is our priority!</p>
+        <h2 class="world">What YOU KNOW...</h2>
+        <form action="">
+            <input class="world" type="text" placeholder="Enter your thoughts">
+            <input type="submit" class="love" value="Submit">
+        </form>
+        
+    </div>
+
+    <div class="content" id="orange">
+        <h2>Orange</h2>
+        <p>The vitamin C found in oranges has other health benefits too: Forms blood vessels, muscles, cartilage, and collagen in your bones. Fights inflammation and can reduce the severity of conditions like asthma, rheumatoid arthritis, and cancer. Boosts the body's immune system to protect against viruses and germs.</p>
+        <p>Oranges are high in potassium, a mineral that regulates heartbeat and muscle function. It's been shown to lower blood pressure in people with hypertension. A sour compound that's found in citrus fruits, citric acid is also used as a natural preservative.</p>
+    </div>
+    <div class="content" id="apple">
+        <h2>apple</h2>
+        <p>Apples are usually a good source of vitamins and minerals, including vitamin C and potassium. Vitamin C: Also called ascorbic acid, vitamin C is a common antioxidant in fruits. It's an essential dietary nutrient that has many important functions in your body.</p>
+        <p>Apple is a sweet and delicious fruit that is very healthy. It is also a good disease-fighter and we can eat it every day. The delicious taste and bright colour of the food make it even more appealing. Moreover, it is a versatile fruit which we can use in many dishes.</p>
+    </div>
+
+    <div class="content" id="grapes">
+        <h2>grapes</h2>
+        <p>A grape is a fruit, botanically a berry, of the deciduous woody vines of the flowering plant genus Vitis. Grapes are a non-climacteric type of fruit, generally occurring in clusters. The cultivation of grapes began approximately 8,000 years ago, and the fruit has been used as human food throughout its history.</p>  
+        <p>Grapes provide both fibre and potassium, which are helpful in their support of heart function including blood pressure. The polyphenols in grapes including resveratrol and quercetin are also thought to benefit the cardiovascular system, protecting it from inflammatory and oxidative damage.</p>  
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
